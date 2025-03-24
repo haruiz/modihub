@@ -7,7 +7,7 @@ import groq
 import tenacity
 from groq import Groq
 
-from modi.llm.base import LLMClient, LLMSchema
+from modihub.llm.base import LLMClient, LLMSchema
 
 logging.basicConfig(level=logging.INFO)
 

@@ -2,8 +2,8 @@ import typing
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Assuming Metric and LLMClient classes are defined elsewhere
-from modi.metrics import Metric  # Update 'your_module' to the correct module name
-from modi.llm import LLM, LLMClient
+from modihub.metrics import Metric  # Update 'your_module' to the correct module name
+from modihub.llm import LLM, LLMClient
 class Evaluator:
     """
     Evaluator class for benchmarking multiple models on a given prompt using a list of metrics.

@@ -4,8 +4,8 @@ import ollama
 import tenacity
 from PIL.Image import Image as PILImage
 
-from modi.llm.base import LLMClient, LLMSchema
-from modi.utils import ImageUtils
+from modihub.llm.base import LLMClient, LLMSchema
+from modihub.utils import ImageUtils
 
 
 class OllamaClient(LLMClient):

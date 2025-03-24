@@ -1,5 +1,5 @@
 from PIL import Image
-from modi.llm import LLM
+from modihub.llm import LLM
 from dotenv import find_dotenv, load_dotenv
 
 load_dotenv(find_dotenv())

@@ -336,8 +336,8 @@ wheels = [
 ]
 
 [[package]]
-name = "modi"
-version = "0.1.0"
+name = "modihub"
+version = "1.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "anthropic" },

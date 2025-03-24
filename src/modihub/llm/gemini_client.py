@@ -6,7 +6,7 @@ from time import sleep
 
 import tenacity
 from google import genai
-from modi.llm.base import LLMClient, LLMSchema
+from modihub.llm.base import LLMClient, LLMSchema
 from google.genai.types import (
     GenerateImagesResponse,
     GenerateContentResponse,

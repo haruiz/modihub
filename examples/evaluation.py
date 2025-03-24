@@ -1,6 +1,6 @@
 from dotenv import find_dotenv, load_dotenv
-from modi.metrics import Perplexity, LexicalDiversity
-from modi.eval import Evaluator
+from modihub.metrics import Perplexity, LexicalDiversity
+from modihub.eval import Evaluator
 
 load_dotenv(find_dotenv())
 

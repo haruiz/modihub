@@ -1,7 +1,7 @@
 from PIL import Image
 from dotenv import find_dotenv, load_dotenv
 
-from modi.llm import LLM
+from modihub.llm import LLM
 
 load_dotenv(find_dotenv())
 

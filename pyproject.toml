@@ -1,7 +1,7 @@
 [project]
-name = "modi"
-version = "0.1.0"
-description = "Add your description here"
+name = "modihub"
+version = "1.0.0"
+description = "A Unified Interface for Diverse LLMs"
 readme = "README.md"
 authors = [
     { name = "haruiz", email = "henryruiz22@gmail.com" } 
@@ -20,9 +20,50 @@ dependencies = [
     "tenacity>=9.0.0",
 ]
 
-[project.scripts]
-modi = "modi:main"
-
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+
+[tool.hatch.build]
+exclude = [
+    "tests/",
+    "docs/",
+    "examples/",
+    "assets/",
+    "keys/",
+    ".git/",
+    ".github/",
+    "scripts/",
+    "configs/",
+    "README.md",
+    ".env",
+    "config.json",
+    "*/**/.sh",
+    "Makefile",
+    "cloudbuild.yaml",
+    "*/**/Dockerfile",
+    "Dockerfile",
+    "requirements.txt",
+    "docker/",
+    "*.sh",
+    "*.yml",
+    "analysis/",
+    "data/",
+    "images/",
+    "ui/",
+    "web.ps1",
+    ".vscode/",
+    ".idea/",
+    ".gitignore",
+    ".gitattributes",
+    ".gitmodules",
+    ".gitkeep",
+    ".gitlab-ci.yml",
+    ".gitlab/",
+    ".gitlab-ci/",
+    ".gitlab-ci.yml",
+    ".python-version"
+
+]
+

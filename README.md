@@ -1,6 +1,6 @@
-# MODI: A Unified Interface for Diverse LLMs
+# MODIHUB: A Unified Interface for Diverse LLMs
 
-**MODI** simplifies the way you interact with multiple Large Language Models (LLMs) by offering a streamlined, consistent interface. It abstracts the complexities of provider-specific APIs and configurations, making it easy to switch between models across different platforms.
+**MODIHUB** simplifies the way you interact with multiple Large Language Models (LLMs) by offering a streamlined, consistent interface. It abstracts the complexities of provider-specific APIs and configurations, making it easy to switch between models across different platforms.
 
 ## 🔑 Key Features
 
@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-pip install -U modi
+pip install -U modihub
 ```
 
 ## Usage Examples
@@ -20,7 +20,7 @@ pip install -U modi
 ### 1. Listing Available Models
 
 ```python
-from modi.llm import LLM
+from modihub.llm import LLM
 
 available_models = LLM.available_models()
 for client, models in available_models.group_by("client"):
@@ -32,7 +32,7 @@ for client, models in available_models.group_by("client"):
 ### 2. Text Generation
 
 ```python
-from modi.llm import LLM
+from modihub.llm import LLM
 from dotenv import find_dotenv, load_dotenv
 
 load_dotenv(find_dotenv()) # Loads API keys from .env file
@@ -48,7 +48,7 @@ print(response)
 
 ```python
 from PIL import Image
-from modi.llm import LLM
+from modihub.llm import LLM
 from dotenv import find_dotenv, load_dotenv
 
 load_dotenv(find_dotenv())
@@ -67,8 +67,8 @@ print(response)
 
 ```python
 from dotenv import find_dotenv, load_dotenv
-from modi.metrics import Perplexity, LexicalDiversity
-from modi.eval import Evaluator
+from modihub.metrics import Perplexity, LexicalDiversity
+from modihub.eval import Evaluator
 
 load_dotenv(find_dotenv())
 

@@ -4,7 +4,7 @@ import typing
 import anthropic
 import tenacity
 from anthropic import Anthropic
-from modi.llm.base import LLMClient, LLMSchema
+from modihub.llm.base import LLMClient, LLMSchema
 
 
 def api_exception_handler(func):
