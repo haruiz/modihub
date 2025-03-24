@@ -209,7 +209,7 @@ wheels = [
 
 [[package]]
 name = "groq"
-version = "0.11.0"
+version = "0.20.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -219,9 +219,9 @@ dependencies = [
     { name = "sniffio" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bb/4d/14b9a0c27695b2aa3bcd7f397a9c6d5aa84165d0bed4e4ca3f08fe59a546/groq-0.11.0.tar.gz", hash = "sha256:dbb9aefedf388ddd4801ec7bf3eba7f5edb67948fec0cd2829d97244059f42a7", size = 104986 }
+sdist = { url = "https://files.pythonhosted.org/packages/8f/fc/e5a03586ffad7ae6c7996f388ca321a3bf8b9fa544a36a934ce4b6b44211/groq-0.20.0.tar.gz", hash = "sha256:2a201d41cae768c53d411dabcfea2333e2e138df22d909ed555ece426f1e016f", size = 121936 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/94/c3/8bf3cd2987e262f9fd45024313dae1d009edaa7a5b429566edfdaedaa024/groq-0.11.0-py3-none-any.whl", hash = "sha256:e328531c979542e563668c62260aec13b43a6ee0ca9e2fb22dff1d26f8c8ce54", size = 106518 },
+    { url = "https://files.pythonhosted.org/packages/95/37/9b415df5dd1e6a685d3e8fd4e564a5e80f4f87c19d82829ad027fa2bb150/groq-0.20.0-py3-none-any.whl", hash = "sha256:c27b89903eb2b77f94ed95837ff3cadfc8c9e670953b1c5e5e2e855fea54b6c5", size = 124919 },
 ]
 
 [[package]]
@@ -356,7 +356,7 @@ dependencies = [
 requires-dist = [
     { name = "anthropic", specifier = ">=0.49.0" },
     { name = "google-genai", specifier = ">=1.7.0" },
-    { name = "groq", specifier = ">=0.11.0" },
+    { name = "groq", specifier = ">=0.20.0" },
     { name = "nltk", specifier = ">=3.9.1" },
     { name = "ollama", specifier = ">=0.3.3" },
     { name = "openai", specifier = ">=1.68.2" },

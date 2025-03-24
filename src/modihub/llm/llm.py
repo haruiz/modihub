@@ -5,6 +5,7 @@ from .openai_client import OpenAIClient
 from .gemini_client import GeminiClient
 from .ollama_client import OllamaClient
 from .groq_client import GroqClient
+from .anthropi_client import AnthropicClient
 from .base import LLMSchema
 
 class ModelsList:
@@ -49,7 +50,7 @@ class LLM:
     A factory class for creating model instances.
     """
 
-    _clients = {"openai": OpenAIClient, "google": GeminiClient, "ollama": OllamaClient, "groq": GroqClient}
+    _clients = {"openai": OpenAIClient, "google": GeminiClient, "ollama": OllamaClient, "groq": GroqClient, "anthropic": AnthropicClient}
 
     @staticmethod
     def available_models() -> ModelsList:
