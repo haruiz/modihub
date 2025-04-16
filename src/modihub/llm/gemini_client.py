@@ -116,14 +116,20 @@ class GeminiClient(LLMClient):
                 return response
 
             else:  # Default is TEXT
-                config: GenerateContentConfigOrDict = kwargs.pop("config", {})
-                if isinstance(config, GenerateContentConfig):
-                    config = config.to_json_dict()
+                # Pop the config from kwargs or use an empty dict as default
+                config_data = kwargs.pop("config", {})
 
-                # Merge system_instruction into config if not already set
-                if self.system_instruction and "system_instruction" not in config:
-                    config["system_instruction"] = self.system_instruction
+                # Ensure it's an instance of GenerateContentConfig
+                if not isinstance(config_data, GenerateContentConfig):
+                    config = GenerateContentConfig(**config_data)
+                else:
+                    config = config_data
 
+                # Set default system instruction if not already set
+                if self.system_instruction and not config.system_instruction:
+                    config.system_instruction = self.system_instruction
+
+                logger.info(config)
                 response: GenerateContentResponse = self.api_client.models.generate_content(
                     model=self.model_name,
                     contents=prompt,
